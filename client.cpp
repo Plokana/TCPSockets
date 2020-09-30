@@ -13,7 +13,7 @@ void ClientSocket::CreateSocket(string hostname, int port){
 }
 void ClientSocket::Connect(string hostname, int port){
 	cout<<"ClientSocket::Connect\n";
-	cout<<"port : "<<port<<"htons(port): "<<htons(port);
+	cout<<"Port : "<<port<<"htons(port): "<<htons(port);
 	int success = connect(m_sockfd, (struct sockaddr *)&m_serveraddr, sizeof(m_serveraddr));
 	if(success<0){perror("Connect error "); m_connected = false;}
 	else 	m_connected = true;
