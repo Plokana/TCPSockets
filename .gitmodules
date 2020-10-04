@@ -1,0 +1,3 @@
+[submodule "STLRepo"]
+	path = STLRepo
+	url = https://github.com/Plokana/STLRepo.git
